@@ -884,7 +884,7 @@ NativeWindowMac::NativeWindowMac(
   if (title_bar_style_ == CUSTOM_BUTTONS_ON_HOVER &&
       base::mac::IsAtLeastOS10_10() &&
       (!useStandardWindow || transparent() || !has_frame())) {
-    styleMask = NSFullSizeContentViewWindowMask;
+    styleMask |= NSFullSizeContentViewWindowMask;
   }
   if (minimizable) {
     styleMask |= NSMiniaturizableWindowMask;
