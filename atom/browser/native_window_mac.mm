@@ -62,12 +62,12 @@ bool ScopedDisableResize::disable_resize_ = false;
   self = [super initWithFrame:frame];
 
   NSButton* close_button = [NSWindow standardWindowButton:NSWindowCloseButton
-                                             forStyleMask:NSTitledWindowMask];
+                                             forStyleMask:NSBorderlessWindowMask];
   NSButton* miniaturize_button =
       [NSWindow standardWindowButton:NSWindowMiniaturizeButton
-                        forStyleMask:NSTitledWindowMask];
+                        forStyleMask:NSBorderlessWindowMask];
   NSButton* zoom_button = [NSWindow standardWindowButton:NSWindowZoomButton
-                                            forStyleMask:NSTitledWindowMask];
+                                            forStyleMask:NSBorderlessWindowMask];
 
   CGFloat x = 0;
   const CGFloat space_between = 20;
